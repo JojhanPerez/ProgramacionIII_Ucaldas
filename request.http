@@ -1,0 +1,66 @@
+###
+POST http://localhost:3000/api/client HTTP/1.1
+Content-Type: application/json
+
+{
+    "dni": "1002544922",
+    "name": "Jojhan",
+    "lastname": "NA",
+    "addres": {
+        "city": "Manizales",
+        "cityCode": "170003",
+        "lat": -232,
+        "length": 3434
+    },
+    "acountBank": "38945298356923"
+}
+
+###
+GET http://localhost:3000/api/client HTTP/1.1
+
+###
+GET http://localhost:3000/api/client/62144a02c31acc9add10cb52 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/client/621454296a0f61ecdf752968 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/client/62145070dde431b10d10a1fc HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Daniel",
+    "lastname": "Quintero",
+    "addres": {
+        "city": "Bogota"
+    }
+}
+
+###
+POST http://localhost:3000/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "product": "Manzana",
+    "img": "./src/assets/img/manzana.jpg",
+    "price": 2000,
+    "quantity": 100,
+    "state": true
+}
+
+###
+GET http://localhost:3000/api/product HTTP/1.1
+
+###
+GET http://localhost:3000/api/product/62145fb142155ccfd6c341bb HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/product/62145fc242155ccfd6c341bd HTTP/1.1
+
+###
+PUT http://localhost:3000/api/product/62145fb142155ccfd6c341bb HTTP/1.1
+Content-Type: application/json
+
+{
+    "price": 1500
+}
